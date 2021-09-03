@@ -812,6 +812,15 @@ img{
 	flex-direction: column;
 }
 
+.top__card-thumb{
+	transition: 1.6s all;
+}
+
+.top__card-thumb:hover{
+	transform: scale(1.007);
+	
+}
+
 
 .top__card-stats{
 	display: flex;
