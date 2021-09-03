@@ -419,7 +419,6 @@ textarea {
   }
   /** Header styles Start*/
   .header{
-	  background-color: #000;
 	  /** Fixed position for header*/
 	  position: fixed;
 	  top: 0;
@@ -460,8 +459,13 @@ textarea {
   }
    /** Header styles END*/
 
-   /** Intro style START*/
 
-   
+   /** Intro style START*/
+.intro{
+	height: 100vh; /** Height = height of the screen*/
+	background: url(../img/heroBG.jpg) no-repeat center;
+	background-size: cover;
+}
+
    /** Intro style END*/
 
