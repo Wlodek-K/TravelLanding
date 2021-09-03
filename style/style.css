@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0-modified | 20110126
-   License: none (public domain)
+v2.0-modified | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -375,97 +375,107 @@ textarea {
 	src: local(''),
 		 url('../fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 		 url('../fonts/lato-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
   /* lato-700 - latin */
-  @font-face {
+@font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 700;
 	src: local(''),
 		 url('../fonts/lato-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 		 url('../fonts/lato-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
   /* lato-900 - latin */
-  @font-face {
+@font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 900;
 	src: local(''),
 		 url('../fonts/lato-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 		 url('../fonts/lato-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
 
-  html{
-	  box-sizing: border-box;
-  }
+html{
+	box-sizing: border-box;
+}
 
   *, *::before, *::after{
 	box-sizing: inherit;
-  }
-  /** Basic styles fo body*/
-  body{
+}
+/** Basic styles fo body*/
+body{
 	font-family: 'Lato';
 	font-style: normal;
 	font-size: 16px;
 	line-height: 1.2;
 	font-weight: normal;
 	color: #102746;
-  }
+}
 
-  /** class foraligning all content*/
-  .wrapper{
-	  max-width: 1060px;
-	  margin: 0 auto;
-  }
-  /** Header styles Start*/
-  .header{
-	  /** Fixed position for header*/
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-  }
+img{
+	max-width: 100%;
+	height: auto;
+}
 
-  .header__wrapper{
-	  display: flex;
-	  flex-wrap: wrap;
-	  align-items: flex-end; /** vertical alignment*/
-	  justify-content: space-between;  /** Elements placed at the edges of the block*/
-	  padding-top: 56px;
-  }
+/** class foraligning all content*/
+.wrapper{
+	max-width: 1060px;
+	margin: 0 auto;
+}
 
-  .header__list{
-	  display: flex;
-	  flex-wrap: wrap;
-  }
+.wrapper-full{
+	
+}
+/** Header styles Start*/
+.header{
+	/** Fixed position for header*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 
-  .header__item{
-	  margin-right: 82px;
-  }
-  /** Zeroing the margins for the last element*/
-  .header__item:last-child{
-	  margin-right: 0;
-  }
+.header__wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end; /** vertical alignment*/
+	justify-content: space-between;  /** Elements placed at the edges of the block*/
+	padding-top: 56px;
+}
 
-  .header__link{
+.header__list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__item{
+	margin-right: 82px;
+}
+/** Zeroing the margins for the last element*/
+.header__item:last-child{
+	margin-right: 0;
+}
+
+.header__link{
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
 	text-decoration: none;
-  }
-  /** link state on hover, focus with Tab and click*/
-  .header__link:hover, .header__link:focus, .header__link:active{
+}
+/** link state on hover, focus with Tab and click*/
+.header__link:hover, .header__link:focus, .header__link:active{
 	opacity: 0.75;
-  }
-   /** Header styles END*/
+}
+/** Header styles END*/
 
 
-   /** Intro style START*/
+/** Intro style START*/
 .intro{
 	min-height: 100vh; /** Height = height of the screen*/
 	background: url(../img/heroBG.jpg) no-repeat center;
 	background-size: cover;
 	padding-top: 263px;
+	margin-bottom: 153px;
 }
 
 .intro__title{
@@ -524,6 +534,81 @@ textarea {
 	background: #014aa8;
 	transition: 1.2s;
 }
+/** Intro style END*/
 
-   /** Intro style END*/
+/** Benefits styles START*/
+.benefits{
+	margin-bottom: 131px;
+}
 
+.benefits__wrap{
+	max-width: 1262px;
+	background-color: #fff;
+	margin: 0 auto;
+	box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+	position: relative;
+}
+
+.benefits__title{
+	width: 100%;
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 42px;
+	padding: 93px 100px 88px 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-100%);
+	background-color: #fff;
+}
+
+.benefits__cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 55px;
+	padding: 0 100px;
+}
+
+.benefits__card{
+	grid-column: span 1;
+	margin-bottom: 112px;
+}
+
+.benefits__card-pic{
+	margin-bottom: 37px;
+	max-width: 66px;
+}
+
+.benefits__card-thumbs{
+	display: block;
+}
+/** Benefits styles END*/
+
+.benefits__card-title{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 26px;
+}
+
+.benefits__card-desk{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 39px;
+}
+
+.benefits__card-more{
+	display: inline-block;
+	padding-right: 59px;
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #006DFE;
+	background: url(/img/svg/arrow-icon.svg) no-repeat 95% center;
+	transition: .4s all;
+
+}
+
+.benefits__card-more:hover, .benefits__card-more:focus{
+	background: url(/img/svg/arrow-icon.svg) no-repeat right center;
+}
