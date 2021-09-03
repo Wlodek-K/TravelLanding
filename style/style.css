@@ -417,7 +417,7 @@ textarea {
 	  max-width: 1060px;
 	  margin: 0 auto;
   }
-
+  /** Header styles Start*/
   .header{
 	  background-color: #000;
 	  /** Fixed position for header*/
@@ -458,4 +458,5 @@ textarea {
   .header__link:hover, .header__link:focus, .header__link:active{
 	opacity: 0.75;
   }
+   /** Header styles END*/
 
