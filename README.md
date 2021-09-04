@@ -1,7 +1,10 @@
 # TravelLanding
-Simple Landing Page
+## Simple Landing Page
 
-Technologies:
+### Technologies:
 
-#HTML5
-#CSS3
++ HTML5
+
++ CSS3
+
++ JS
