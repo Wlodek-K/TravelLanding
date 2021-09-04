@@ -892,3 +892,39 @@ img{
 }
 
 /** Top places styles END*/
+
+/** Videos styles START*/
+
+.videos{
+	width: 100%;
+}
+
+.videos__wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.video-item{
+	padding-top: 56.25%;
+}
+
+.video__element{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+/** Videos styles END*/
+
+/** Footer styles START*/
+
+.footer{
+	background: #0E1D28;
+	padding: 119px 0;
+}
+
+/** Footer styles END*/
